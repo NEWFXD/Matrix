@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Matrix Expert</title>
+	<script src="MatrixCalculator.js"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<header class="banner"><img src="final green.png" width="1900" height="350" alt="Page logo Matrix Expert"/></header>
+	<div id="upper">
+		<div id="matrix1" class="parent">
+			<h1 class="title">Matrix A</h1>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r1" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r2" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>
+			<input class="m1r3" type="text" value="0"/>		
+			
+		</div>
+		<div id="operations">
+			<input class="operation" type="button" value="A x B" onclick="mc.multiplyMatrix()"/>
+			<input class="operation" type="button" value="A + B" onclick="mc.addMatrix()"/>
+			<input class="operation" type="button" value="A - B" onclick="mc.subtractMatrix()"/>
+		</div>
+		<div id="matrix2" class="parent">
+			<h1 class="title">Matrix B</h1>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r1" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r2" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>
+			<input class="m2r3" type="text" value="0"/>		
+		</div>
+		
+	</div>
+	<div class="lower">
+		<div id="fuc" class="functions">
+			<h6 class="titlefuc">Matrix A functions</h6>
+			<div class="allboxfuc">
+				<input class="function" type="button" value="Determinant" onclick="mc.calculateDeterminant()"/>
+				<input class="function" type="button" value="Transpose" onclick="mc.transposeMatrix()"/>
+				<input class="function" type="button" value="Inverse" onclick="mc.invertMatrix()"/>
+				<input class="function" type="button" value="Rank" onclick="mc.calculateRank()"/>
+			</div>
+	
+		</div>
+		<div class="output">
+				<textarea wrap="soft" rows="10" cols="20" id="console" disabled></textarea>
+		</div>
+	</div>
+	
+</body>
+</html>
